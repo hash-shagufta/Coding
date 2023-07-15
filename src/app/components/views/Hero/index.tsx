@@ -1,11 +1,8 @@
 import React from 'react'
 import { ShoppingCart } from 'lucide-react'
-import heroimage from "/public/heroimage.webp"
+import { heroimage } from "@/app/components/assests"
 import Image from "next/image"
-import feature from "/public/featured1.webp"
-import feature2 from "/public/featured2.png"
-import feature3 from "/public/featured3.webp"
-import feature4 from "/public/featured4.png"
+
 function Hero() {
   return (
     
@@ -27,14 +24,14 @@ An Industrial Take on Streetwear
       <button className= "flex gap-1 items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-1xl">
       <ShoppingCart className="mr-2 h-7 w-7 "  /> Start Shopping
 </button>
-    <div className='flex gap-x-24 py-10'>
-    <Image src={feature} alt='image' className='py-4'/>
+    <div className='flex gap-x-24 py-10 '>
+    <Image width={80} height={80}  src={"https://full-stack-ecommerce-clothing-web.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FFeatured1.66abddd4.png&w=128&q=75"} alt='image' className='py-4'/>
     
-    <Image src={feature2} alt='image' className='py-4'/>
+    <Image width={80} height={80} src={"https://full-stack-ecommerce-clothing-web.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FFeatured2.247cd605.png&w=128&q=75"} alt='image' className='py-4'/>
 
-    <Image src={feature3} alt='image' className='py-4'/>
+    <Image width={80} height={80} src={"https://full-stack-ecommerce-clothing-web.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FFeatured3.6076521d.png&w=128&q=75"} alt='image' className='py-4'/>
 
-    <Image src={feature4} alt='image' className='py-4'/>
+    <Image width={80} height={80} src={"https://full-stack-ecommerce-clothing-web.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FFeatured4.0489f1fc.png&w=128&q=75"} alt='image' className='py-4'/>
     </div>
 </div>
 

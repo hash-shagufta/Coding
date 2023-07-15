@@ -7,7 +7,7 @@ const DropDown : FC <{ item:NavbarItemType }> = ({ item }) => {
    <ul>
     {item.dropDownData?.map((item:NavbarItemType, index:number) =>(
 <li className='hover:ml-2 group-hover:duration-300 -translate-y-5'>
-    <Link key={index} href={item.href}>{item.label}</Link>
+    <Link  href={item.href}>{item.label}</Link>
 </li>
 
     ))}

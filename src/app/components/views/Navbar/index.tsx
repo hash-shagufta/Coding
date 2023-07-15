@@ -24,7 +24,7 @@ const Navbar = () => {
 <div className="hidden lg:flex justify-between items-center w-full">
 <ul className="flex space-x-4 front-medium text-lg">
 {NavbarArray.map((item: NavbarItemType, index: number) => (
-        <li className="flex items-center relative rounded-sm px-3 py-1 hover:bg-gray-100 cursor-pointer group">
+        <li key={index} className="flex items-center relative rounded-sm px-3 py-1 hover:bg-gray-100 cursor-pointer group">
         <Link href={item.href} > {item.label} </Link>
         {item.isDropDown ?  <HiOutlineChevronDown className="mt-1 -rotate-180 group-hover:rotate-0 duration-300" size={16}/>: ""} 
         {item.isDropDown && <div className={`invisible  group-hover:visible absolute top-8 py-4 px-6 left-0  bg-gray-100 font-light min-w-[7.8rem]`}>
